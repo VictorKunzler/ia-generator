@@ -1,4 +1,6 @@
-const VALID_TYPES = ['randomText', 'song', 'poetry', 'fairytale'];
+import { TEXT_GENERATION_TYPES as TYPES } from '../../utils/constants';
+
+const VALID_TYPES = TYPES.map((type) => type.value);
 
 type Data = {
   type: string;

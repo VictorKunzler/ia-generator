@@ -6,25 +6,7 @@ import Select from '../../src/client/components/select/Select';
 
 import styles from './index.module.css';
 import generate from '../../src/client/services/generate';
-
-const TYPES = [
-  {
-    name: 'Random Text',
-    value: 'randomText',
-  },
-  {
-    name: 'Song',
-    value: 'song',
-  },
-  {
-    name: 'Poetry',
-    value: 'poetry',
-  },
-  {
-    name: 'Fairytale',
-    value: 'fairytale',
-  },
-];
+import { TEXT_GENERATION_TYPES as TYPES } from '../../utils/constants';
 
 export default function TextGenerator() {
   const [text, setText] = useState('');
